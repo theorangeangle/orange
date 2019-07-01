@@ -35,11 +35,13 @@ MojoD https://www.twitch.tv/mojod
 ColonelWill https://www.twitch.tv/colonelwill
 
 An immense "thank you" to our sponsor, UpCloud! They are providing us with all the servers for the event, which are more than up to the challenge with some awesome hardware.
-\
+
 If you are [TBD pitch about UpCloud's services], check them out and recieve [TBD discount] with code "GRIDLOCK".
 
 
 The primary communication channel will be on a dedicated "Gridlock Cluster" discord guild. You can join at [vanity URL] to talk about the event and plan attacks on future nodes, with dedicated voice and text channels.
+
+With all of this awesome-sauce sadly comes some rules. Firstly, don't be a dick. Secondly, don't remove stuff that works, especially if it's actively producing items**!** It's lame, and we don't like lame. 
 
 And lastly, a special thanks to:
 
@@ -48,12 +50,8 @@ Zr4g0n, the crazy mastermind behind it all! and gfx work
 Danielv123 for creating the Clusterio mod and its backend and putting a lot of dev time to prepare for the big event
 
 AreYouScared and /u/TheOrangeAnglefor helping coordinate things 
-
-The Explosive Gaming community for providing team members
-
-The FactorioMMO community for providing team members
-
-The RedMew community for providing team members
+  
+The Explosive Gaming, FactorioMMO, and RedMew communities for providing team members to staff our battlestations
 
 JD-Plays and many others for polishing many things late at night, including this post 
 
@@ -61,60 +59,9 @@ Cooldude2606 for gfx work and the online map
 
 Godmave also working his butt off on Clusterio Code and making our trains teleport
 
-Cortex and Gerkiz for working on the Clusterio code
+Cortex and Gerkiz for also working on the Clusterio code
 
 /u/psihius - the burned out guy from clusterio 60k who somehow found himself managing the event for a second time
 
 How does it work?
 Clusterio is magic that allows multiple nodes (aka servers) to send items and trains to each other, as well as sync researched technologies and the player's inventory. This can be done with a mod or scenario, as well as some server-side magic.
-
-Using more jargon and less magic, Clusterio is a Factorio mod that consists of 3 pieces:
-
-Clusterio mod, available on the mod portal, that adds all the Clusterio specific items. (which aren't needed for this event)
-
-A client application (slave) written with NodeJS that interacts with the Factorio server instance and allows communications between the Master server and Factorio server
-
-Master application that controls the whole cluster and is the actual center point that transfers data between the clients and is essentially the central storage, distributes resources, fulfills client requests for items, transfers research and other stuff.
-
-So, why is this awesome? Because you can dedicate an entire node for one specific task. Need more mining? Join a mining node and add more miners. Is the mining node nearing the UPS limit? Just add another mining node! Smelting? No need to do that locally, just send it off to another node! The less awesome part is that there’s no way to quickly transfer yourself between nodes; you’ll have to reconnect.
-
-With all of this awesome-sauce sadly comes some rules. Firstly, don't be a dick. Secondly, don't remove stuff that works, especially if it's making items that are put into the cloud**!** It's lame, and we don't like lame. Mrs Banhammer though, she loves herself some lame! Instead make a new, better one instead, and once the new and improved one is up and running you're free to remove the old one.
-
-Links to all the things!
-FactorioMMO:
-
-https://discord.gg/ePjHDK4
-
-https://www.twitch.tv/factoriommo
-
-https://www.youtube.com/channel/UCmw-6nXo0PkBk56huPi79NA
-
-RedMew discord:
-
-http://redmew.com/discord
-
-Explosive gaming:
-
-https://explosivegaming.nl/
-
-JD-Plays
-
-https://discord.me/jdplays
-
-https://www.youtube.com/jdplays
-
-https://www.twitch.tv/jd_play5
-
-MoJoD
-
-https://www.twitch.tv/mojod
-
-Xterminator
-
-https://www.twitch.tv/xterminator5
-
-https://www.youtube.com/user/sonoribingudeddo
-
-We built this city
-
-https://discord.me/wbtc
