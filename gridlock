@@ -1,45 +1,33 @@
-The Gridlock Cluster
-
-Where all the trains are out to get you!
-
-After the success of the first MMO Clusterio 60K event, we decided we had to do it again, but something was missing, some challenge unconquered.
-
-It was all just too easy with massive buildings that could access the cloud. They missed the Factorio feel of risk we all associate with mass shipping of stock around the factory. We were missing...... trains! So the team at Clusterio Inc. got aworking and made amends for their earlier faults and added trains: teleporting trains that are now out to get you! And they can come from OTHER servers as well!
-
-We also had a look at our successes and failures from the previous event. The massive influx of players during the first 48 hours, that as the event continued, less and less player's PCs could keep up with the ever increasing demands of the maps. Along with the ad-hoc way we added servers in the previous event left a lot of people wondering which server was which.
+Breaking News: The Gridlock Cluster - a Clusterio MMO event - is launching on June 12th!
 
 The Gridlock cluster is simple: it's a pre-set grid of servers each connected by teleporting trains (that are ALL trying to kill you), all working to avoid the worst nightmare an engineer can face... a train deadlock!
 
 The master server node will be enabled from the starting location, and then new servers will be attached constantly enabling new players to join the event, no whitelisting required.
 
-'Attached?' I hear you say!
+Attached? Yes, new servers will need a landing party of engineers who will be stripped of their power armour and then sent in to establish a base of operations. Only after all the biters on the map are cleared and a satellite launched, will they be enabled to send and receive shipments via the teleporting death trains! 
 
-Yes, new servers will need a landing party of engineers who will be stripped naked... of their power armour and then sent in to establish a beachhead on the server. Only after all the biters on the map are cleared and a satellite launched to establish communications with the cloud, will they be enabled to send and receive shipments via the teleporting death trains! All the biters? How many biters are there? Well, due to the nature of the event and that we have some very cruel administrators, some maps you might find lightly sprinkled with biters, but as we all know biter blood is what ore is made from, these will also be lightly sprinkled with resources. Other maps have been made by our more sinister administrators and will make most death maps look like a cake walk!
+The amount of biters and ore will vary from server to server, mostly depending on a blessing from the RNG gods and a curse from the Gridlock Staff.
 
-Lastly with all the research completed last time and over 2 million satellites launched in the last event (which should have blocked out the sun!), we thought that feature needed to be incorporated into this event. So be warned as more nodes join and as more research is done, the sunlight will slowly be blocked out over time! Remember the bigger biters like attacking at night time!
+The inital goal is to beat our previous record of over **2 million satellites launched** in the last event (which should have blocked out the sun!). But we thought that maybe the sun *should* be blocked out! So be warned as more nodes join and as more research is done, the sunlight will slowly be blocked out over time! Remember the bigger biters like attacking at night time!
 
-So Engineer, if you think you have what it takes to not only clear all the biters from a 2048x2048 world but are a train master who is immune to trains, come try out our teleporting trains! There will always be new servers coming online that will need to be cleared and a rocket launched for cloud establishment, as well as established servers that will require optimising to launch as many satellites as possible and completely block out the sun this time!
+Engineer, your mission - should you choose to accept it - is to join us, starting with the inital launch on **July 12, 2019 at 19:00/7pm UTC**. There will always be new servers coming online that will need to be cleared and a rocket launched for cloud establishment, as well as established servers that will require optimising to launch as many satellites as possible and completely block out the sun this time!
 
 Required mods are:
-
 NONE! - We are running scenarios instead!
 
-The launch and subsequent work will be live-streamed by these channels:
-
-FactorioMMO - https://www.twitch.tv/factoriommo
-
-JD-Plays https://www.twitch.tv/jd_play5
-
-MojoD https://www.twitch.tv/mojod
-
-ColonelWill https://www.twitch.tv/colonelwill
+Please note that we are running a soft-whitelist, meaning that after a node has been cleared of biters some restrictions - but not total lockout - will be applied as a precaution. However, you can apply for whitelist access on the discord guild - and any particpants from the last event will have full access already.
 
 An immense "thank you" to our sponsor, UpCloud! They are providing us with all the servers for the event, which are more than up to the challenge with some awesome hardware.
-\
+
 If you are [TBD pitch about UpCloud's services], check them out and recieve [TBD discount] with code "GRIDLOCK".
 
-
+=====
 The primary communication channel will be on a dedicated "Gridlock Cluster" discord guild. You can join at [vanity URL] to talk about the event and plan attacks on future nodes, with dedicated voice and text channels.
+
+The launch and subsequent work will be recorded and streamed by several partner Content Creators, and you can find their links on the Gridlock discord.
+=====
+
+With all of this awesome-sauce sadly comes some rules. Firstly, don't be a dick. Secondly, don't remove stuff that works, especially if it's actively producing items**!** Third, use common sense and common decency when communicating with other players - we are all humans here.
 
 And lastly, a special thanks to:
 
@@ -48,12 +36,8 @@ Zr4g0n, the crazy mastermind behind it all! and gfx work
 Danielv123 for creating the Clusterio mod and its backend and putting a lot of dev time to prepare for the big event
 
 AreYouScared and /u/TheOrangeAnglefor helping coordinate things 
-
-The Explosive Gaming community for providing team members
-
-The FactorioMMO community for providing team members
-
-The RedMew community for providing team members
+  
+The Explosive Gaming, FactorioMMO, and RedMew communities for providing team members to staff our battlestations
 
 JD-Plays and many others for polishing many things late at night, including this post 
 
@@ -61,60 +45,9 @@ Cooldude2606 for gfx work and the online map
 
 Godmave also working his butt off on Clusterio Code and making our trains teleport
 
-Cortex and Gerkiz for working on the Clusterio code
+Cortex and Gerkiz for also working on the Clusterio code
 
 /u/psihius - the burned out guy from clusterio 60k who somehow found himself managing the event for a second time
 
 How does it work?
 Clusterio is magic that allows multiple nodes (aka servers) to send items and trains to each other, as well as sync researched technologies and the player's inventory. This can be done with a mod or scenario, as well as some server-side magic.
-
-Using more jargon and less magic, Clusterio is a Factorio mod that consists of 3 pieces:
-
-Clusterio mod, available on the mod portal, that adds all the Clusterio specific items. (which aren't needed for this event)
-
-A client application (slave) written with NodeJS that interacts with the Factorio server instance and allows communications between the Master server and Factorio server
-
-Master application that controls the whole cluster and is the actual center point that transfers data between the clients and is essentially the central storage, distributes resources, fulfills client requests for items, transfers research and other stuff.
-
-So, why is this awesome? Because you can dedicate an entire node for one specific task. Need more mining? Join a mining node and add more miners. Is the mining node nearing the UPS limit? Just add another mining node! Smelting? No need to do that locally, just send it off to another node! The less awesome part is that there’s no way to quickly transfer yourself between nodes; you’ll have to reconnect.
-
-With all of this awesome-sauce sadly comes some rules. Firstly, don't be a dick. Secondly, don't remove stuff that works, especially if it's making items that are put into the cloud**!** It's lame, and we don't like lame. Mrs Banhammer though, she loves herself some lame! Instead make a new, better one instead, and once the new and improved one is up and running you're free to remove the old one.
-
-Links to all the things!
-FactorioMMO:
-
-https://discord.gg/ePjHDK4
-
-https://www.twitch.tv/factoriommo
-
-https://www.youtube.com/channel/UCmw-6nXo0PkBk56huPi79NA
-
-RedMew discord:
-
-http://redmew.com/discord
-
-Explosive gaming:
-
-https://explosivegaming.nl/
-
-JD-Plays
-
-https://discord.me/jdplays
-
-https://www.youtube.com/jdplays
-
-https://www.twitch.tv/jd_play5
-
-MoJoD
-
-https://www.twitch.tv/mojod
-
-Xterminator
-
-https://www.twitch.tv/xterminator5
-
-https://www.youtube.com/user/sonoribingudeddo
-
-We built this city
-
-https://discord.me/wbtc
